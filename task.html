@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza Spot</title>
+    <!-- 
+    <link rel="apple-touch-icon" sizes="180x180" href="pizza/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="pizza/android-chrome-192x192.png"> -->
+    <link rel="icon" type="image/png" sizes="16x16" href="pizza/android-chrome-192x192.png">
+
+    <style>
+        * {
+            /* margin: auto; */
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+
+        .topnav {
+            background-color: rgb(59, 20, 14);
+            height: 0px;
+            width: auto;
+            padding: 50px;
+            margin-top: 0px;
+           
+            margin-inline: 20px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            /* overflow: hidden; */
+            
+
+        }
+
+        ul  {
+             
+            display:flex;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 200px;
+            margin-top: auto;
+        }
+
+        .topnav a {
+            float: calc(center);
+            margin: auto;
+            color: aliceblue;
+            text-align: top;
+            padding: 0px 2px;
+            text-decoration: none;
+            font-size: 24px;
+            justify-content: space-evenly;
+            
+
+            
+        }
+
+        .topnav a:hover {
+            background-color: #dddddd00;
+            color: rgb(255, 174, 0);
+        }
+
+        .topnav a.active {
+            background-color: rgb(152, 28, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        body {
+            background-image: url("pizza/pizza.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 400px;
+
+        }
+
+
+        header {
+            background-color: rgba(71, 11, 1, 0.643);
+            padding: 30px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+            color: rgb(255, 154, 136);
+            width: auto;
+            margin-inline: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(196, 128, 0);
+
+            text-transform: capitalize;
+            border: dashed;
+            border-width: 5px;
+            border-color: rgba(71, 11, 1, 0.643);
+            margin-inline: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h4 {
+            margin-top: auto;
+            text-align: center;
+            font-size: 60px;
+            color:  rgb(148, 117, 77);
+            padding: 0%;
+            text-decoration: wavy;
+            
+
+        }
+
+        h5 {
+            text-align: center;
+            font-size: xx-large;
+            color: rgba(71, 11, 1, 0.643);
+        }
+
+        h6 {
+            margin-top: auto;
+            font-size: xx-large;
+            color: steelblue;
+
+
+
+        }
+
+
+
+        .fade-in-text {
+            animation: fadeIn 4s;
+            font-size: 30px;
+
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        article {
+            float: left;
+            padding: 5px;
+            width: 100%;
+            /* background-image: url(Images/pizza2.jpg); */
+            height: 500px;
+            background-color: #00000065;
+            color: rgb(255, 255, 255);
+            font-size: large;
+
+        }
+
+     
+
+        @media only screen and (max-width: 600px) {
+
+            body {
+                width: 100%;
+            }
+
+            nav {
+                width: 100%;
+            }
+        }
+
+
+
+
+        .allcard {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(120, 32, 0, 0.459);
+        }
+
+        .card {
+            box-shadow: 0 4px 8px burlywood;
+            max-width: 300px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            size-adjust: 150px;
+            background-color: bisque;
+
+        }
+
+        .allcard img {
+            height: 192px;
+            width: 300px;
+
+        }
+
+        .price {
+            color: rgb(255, 124, 42);
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+
+        #section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            padding: 30px;
+            margin-top: 40px;
+            margin-bottom: 0;
+            left: 0;
+            height: auto;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+        }
+
+        .footer>p {
+            padding: 7px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <ul>
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order Online">Order Online</a>
+            <a href="#contact">contact</a>
+        </ul>
+        </nav>
+    </div>
+
+    <header>The Pizza Spot</header>
+   
+    <div class="fade-in-text">
+        <h1>order online</h1>
+    </div>
+
+    <section>
+
+        <article>
+            <h2>Our Story</h2>
+            <h3>"The Passion For Pizza"</h2>
+
+
+                <p>In a bustling neighborhood, nestled amidst busy streets and towering buildings, The Pizza Spot stood
+                    as a
+                    beacon of culinary excellence and heartfelt hospitality. Led by the vision of Chef Marco, whose
+                    Italian
+                    roots and love for pizza were interwoven with cherished memories, this unassuming restaurant
+                    transcended
+                    the ordinary to become a hidden gem awaiting discovery. From the moment one stepped inside, they
+                    were
+                    greeted by the aroma of fresh pizzas baking in the stone oven and enveloped in the warmth of rustic
+                    décor and genuine smiles from the "Pizza Family." With each pie crafted using the finest, locally
+                    sourced ingredients and inspired by Marco's family traditions, The Pizza Spot invited guests to
+                    savor
+                    not only flavors but also the camaraderie and joy that filled the air. </p>
+                <p>As word spread, families,
+                    friends, and colleagues alike made their way to The Pizza Spot, making it their sanctuary of
+                    celebration, memory-making, and community engagement. Marco's commitment to giving back to the
+                    neighborhood became a defining chapter in the restaurant's story, uniting hearts through charity
+                    events
+                    and supporting local causes. From its humble beginnings to its place as a neighborhood favorite, The
+                    Pizza Spot's narrative exemplified the power of passion, authenticity, and the simple joy of sharing
+                    pizza and life's moments with others.</p>
+
+                <h2>Our Vision</h2>
+                <p>In the heart of a bustling neighborhood, The Pizza Spot Restaurant was a hidden gem, born from the
+                    passion of Chef Marco and his family's culinary heritage. With a warm and inviting ambiance, it
+                    became a
+                    cherished haven where families, friends, and colleagues gathered to create memories over delectable
+                    pizzas. Using the finest locally sourced ingredients, each pie carried a story and a taste of
+                    tradition.
+                    The restaurant's commitment to giving back to the community further enriched its narrative, making
+                    it
+                    more than just a place to eat but a hub of joy and camaraderie. As word spread, The Pizza Spot
+                    became a
+                    beloved neighborhood favorite, a testament to the power of passion and authenticity in redefining
+                    the
+                    art of pizza and hospitality.</p>
+        </article>
+    </section>
+    <h4 id="menu">MENU</h4>
+    <div class="allcard">
+        <div class="card">
+            <img src="pizza/cheese.jpg" alt="pics" />
+            <h3>Cheese pizza</h3>
+            <p class="price">Rs.3000</p>
+            <p>A cheese pizza is a classic and timeless dish that features a thin or thick crust topped with a generous
+                layer of melted cheese. The cheese is typically a combination of mozzarella and other cheese varieties,
+                creating a gooey and stretchy texture. </p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="pizza/bbq.jpg" alt="pics" />
+            <h3>BBQ Chiken Pizza</h3>
+            <p class="price">Rs.3200</p>
+            <p>
+                A BBQ pizza is a mouthwatering fusion of smoky and savory flavors, combining the elements of classic
+                pizza with the rich taste of barbecue. Its base is typically a crispy or chewy crust layered with tangy
+                barbecue sauce, which adds a sweet and savory foundation.
+            </p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="pizza/meat.jpg" alt="" />
+            <h3>Meat Pizza</h3>
+            <p class="price">Rs.2800</p>
+            <p>A meat pizza is a flavorful and hearty creation. Featuring a traditional or unique crust, it's generously
+                topped with a combination of savory meats, ranging from seasoned ground beef, spicy pepperoni, succulent
+                sausage, and tender ham, among others.</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+    <br />
+    <div class="allcard">
+        <div class="card">
+            <img src="pizza/fajita.jpg" alt="" />
+            <h3>Fajita Pizza</h3>
+            <p class="price">Rs.3200</p>
+            <p>
+                A fajita pizza is a culinary fusion that combines the sizzling and zesty flavors of fajitas with the
+                beloved concept of pizza. The base is typically a thin or thick crust, adorned with a layer of vibrant
+                and slightly spicy salsa or fajita sauce.
+            </p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="pizza/Pepperoni Pizza.jpg" alt="" />
+            <h3>Pepperoni Pizza</h3>
+            <p class="price">Rs.3000</p>
+            <p>
+                A pepperoni pizza is a beloved classic that satisfies cravings with its simple yet robust flavors.
+                Featuring a crispy or chewy crust, it's adorned with a layer of zesty tomato sauce that provides a tangy
+                backdrop.
+            </p>
+            <p><button>Add to Cart</button></p>
+        </div>
+        <div class="card">
+            <img src="pizza/Neapolitan pizza.jpg" alt="" />
+            <h3>Neapolitan pizza</h3>
+            <p class="price">Rs.3300</p>
+            <p> Characterized by its thin, soft, and slightly chewy crust, the Neapolitan pizza is typically
+                hand-stretched and cooked in a wood-fired oven at high temperatures.The pizza is finished with a drizzle
+                of extra-virgin olive oil and a sprinkling of fresh basil leaves.</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h6>COME GRAB A SLICE!</h6>
+        <p>
+            500 Terry Francine St.
+            San Francisco, CA 94158</p>
+
+
+
+        <p> Monday – Friday 07:00AM – 10:00PM
+
+            Saturday 09:00AM – 10:00PM
+
+            Sunday 08:00PM –11:00PM </p>
+
+
+
+        <p>Tel: 123-456-7890
+
+            Email: info@thepizzaspot.com</p>
+    </div>
+
+
+</body>
+
+</html>
